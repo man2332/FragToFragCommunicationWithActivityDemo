@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 //-This app shows how to pass data from one fragment(FragmentA) to another fragment(FragmentB) using a activity
 //  FragmentA passes data to MainActivity-then MainActivity passes that data to FragmentB-vise versa
-public class MainActivity extends AppCompatActivity implements FragmentA.FragmentAListener, FragmentB.FragmentBListener {
+public class MainActivity extends AppCompatActivity implements FragmentA.FragmentAListener, FragmentB.FragmentBListener{
 
     private FragmentA fragmentA;
     private FragmentB fragmentB;
@@ -33,4 +33,5 @@ public class MainActivity extends AppCompatActivity implements FragmentA.Fragmen
         fragmentA.updateEditText(input);
     }
 }
-//-fragments should not be tightly coupled- not tied to another activity or fragment with code so use interface to communiticate
+//-fragments should not be tightly coupled- not tied to another activity or
+// fragment with code so use interface to communiticate
